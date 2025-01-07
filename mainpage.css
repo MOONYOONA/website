@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+}
+.intro {
+    width: 100%;
+    height: 50px;
+    font-size: 0.8rem;
+    background-color: rgb(205, 240, 253);
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    /* margin: auto; */
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+
+.menu a:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+.menu-info a:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+
+.class-a {
+    width: 120px;
+    position: relative;
+    right: -50px;
+    top: 3px;
+}
+
+.header-menu {
+    display: flex;
+    column-gap: 20px;
+    line-height: 50px;
+}
+
+.menu-info {
+    position: relative;
+    left: -50px;
+}
+
+.menu {
+    position: relative;
+    font-size: 1rem;
+    margin: 0px 20px;
+    left: -50px;
+    font-weight: 600;
+}
+
+aside {
+    height: auto;
+}
+
+.search {
+    margin: 20px 0px 0px 120px;
+    padding-left: 10px;
+    border: 1px solid gray;
+    border-radius: 30px;
+}
+
+.icon-search {
+    border: none;
+    background-color: transparent;
+}
+
+.fa-solid {
+    cursor: pointer;
+}
+
+.aside-items {
+    width: 400px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+    overflow: visible;
+    height: 650px;
+    overflow-y: auto;
+}
+
+aside li {
+    width: calc(100% / 2);
+    text-align: center;
+    font-size: 13px;
+}
+
+aside li a {
+    text-decoration: none;
+    color: black;
+}
+
+.aside-items::-webkit-scrollbar {
+    width: 10px;
+}
+
+.aside-items::-webkit-scrollbar-track {
+    background-color: gray;
+}
+
+.aside-items::-webkit-scrollbar-thumb {
+    background-color: skyblue;
+}
+
+.aside-items::-webkit-scrollbar-button {
+    display: none;
+}
+
+.aside-items::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(62, 172, 216);
+}
+
+.aside-items::-webkit-scrollbar-track,
+.aside-items::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+}
+
+
+
+.box {
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 70%;
+    height: 650px;
+    position: relative;
+    top: -700px;
+    left: 200px;
+    margin: auto;
+}
+
+.box-item{
+    width: 300px;
+    height: auto;
+}
+.coat{
+    display: none;
+    position: relative;
+}
+.jacket{
+    transform: translate(0, 0);
+    position: relative;
+    display: none;
+}
+.jumper{
+    transform: translate(230px, 0);
+    position: relative;
+    display: none;
+}
+.knit{
+    transform: translate(230px, 0);
+    position: relative;
+    display: none;
+}
+.tshirt{
+    transform: translate(500px, 0px);
+    position: relative;
+    display: none;
+}
+.dress{
+    transform: translate(150%, -400%);
+    position: relative;
+    display: none;
+}
+.skirt{
+    transform: translate(180%, -500%);
+    position: relative;
+    display: none;
+}
+.pants{
+    transform: translate(180%, -600%);
+    position: relative;
+    display: none;
+}
+.acc{
+    transform: translate(180%, -2400px);
+    position: relative;
+    width: 200px;
+    display: none;
+}
+.shoes{
+    transform: translate(250%, -2630px);
+    position: relative;
+    width: 200px;
+    display: none;
+}
+
+.btn {
+    padding: 10px;
+    position: relative;
+    top: 670px;
+    left: 200px;
+    margin: 0 20px;
+}
+
+footer {
+    background-color: white;
+    height: auto;
+    position: relative;
+    top: 10px;
+    bottom: 5px;
+    padding: 50px;
+    text-align: start;
+}
+
+.address {
+    font-size: 0.8rem;
+    font-style: normal;
+    margin-bottom: -3px;
+}
+
+.check {
+    text-decoration: none;
+    color: black;
+}
+
+.check:hover {
+    color: gray;
+}
+
+.alert {
+    background-color: gray;
+    text-align: center;
+    display: none;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    position: fixed;
+    transform: translate(0, -800px);
+    box-shadow: 4px 10px 12px 1px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 4px 10px 12px 1px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 4px 10px 12px 1px rgba(0, 0, 0, 0.45);
+}
+
+.alert a {
+    text-decoration: none;
+    color: black;
+}
+
+.company {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.company-number {
+    display: inline-block;
+    color: black;
+    margin-bottom: -3px;
+}
+
+.company-tel {
+    display: inline-block;
+    margin-bottom: -50px;
+}
+
+.company-email {
+    display: inline-block;
+}
+
+.close-btn {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    top: -100px;
+    right: -70px;
+}
+
+.close-btn:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#layer-front {
+    transform: translate(190px, 20px);
+    display: none;
+}
+
+#layer-back {
+    transform: translate(190px, 30px);
+    display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        max-width: 100%;
+        height: 1100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header {
+        display: flex;
+        background-color: rgb(205, 240, 253);
+        width: 100%;
+        height: 100px;
+        overflow-x: hidden;        
+    }
+
+    .class-a {
+        top: 15px;
+        max-width: 80px;
+    }
+
+    .menu-info {
+        position: relative;
+        top: 5px;
+        left: -450px;
+        white-space: nowrap;
+    }
+
+    .menu a {
+        font-size: 13px;
+        font-weight: 600;
+        position: relative;
+        top: 50px;
+        left: -50px;
+        margin: 0px -20px;
+        white-space: nowrap;
+    }
+
+    .search {
+        position: relative;
+        padding: 10px;
+        top: 50px;
+        left: -50px;
+        width: 150px;
+        height: 15px;
+    }
+
+    .icon-search {
+        position: relative;
+        top: 50px;
+        left: -50px;
+    }
+
+    .aside-items {
+        max-width: 60%;
+        position: relative;
+        top: 40px;
+        left: 10px;
+    }
+
+    .box {
+        width: 400px;
+        transform: translate(-25%, 5%);
+    }
+
+    .box .btn {
+        display: block;
+        margin-bottom: 5px;
+        left: -20px;
+    }
+    #layer-front{
+        transform: translate(180px, -180px);
+    }
+    #layer-back{
+        transform: translate(180px, -175px);
+    }
+
+
+    footer {
+        display: block;
+        position: initial;
+        margin: 0;
+        bottom: 5px;
+    }
+
+    .alert {
+        width: 200px;
+        height: 150px;
+        font-size: 0.7rem;
+    }
+
+    .close-btn {
+        transform: translate(-60px, 10px);
+    }
+
+    .close-btn:hover {
+        color: red;
+    }
+
+    .address {
+        margin-bottom: -3px;
+    }
+}
