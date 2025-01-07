@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="icon" href="image/파비콘.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Cherish&family=Do+Hyeon&family=Gowun+Batang:wght@400;700&family=Jua&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <title>boutique</title>
+    <style>
+        .sr-only {position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;}
+    </style>
+
+</head>
+
+<body>
+    <p id="size" class="sr-only">의류 쇼핑몰의 사이트입니다.</p>
+    <div class="container">
+        <div class="intro">
+            <header>
+                <div class="logo-wrap">
+                <ul>
+                    <li class="logo"><a href="홈페이지.html"><img src="image/홈페이지로고.svg" alt="브랜드 로고"></a></li>
+                </ul>
+            </div>
+                <div class="menu-wrap">
+                <ul class="header-menu">
+                    <li class="menu"><a href="#">Best 10</a></li>
+                    <li class="menu"><a href="#">신상</a></li>
+                    <li class="menu"><a href="#">Outer</a></li>
+                    <li class="menu"><a href="#">Top</a></li>
+                    <li class="menu"><a href="#">Dress</a></li>
+                    <li class="menu"><a href="#">Bottom</a></li>
+                    <li class="menu"><a href="#">Acc</a></li>
+                    <li class="menu"><a href="#">Shoes</a></li>
+                    <li class="menu"><a href="#">Sale</a></li>
+                    <li class="menu"><a href="메인페이지.html">코디만들기</a></li>
+                </ul>
+            </div>
+            <div class="info-wrap">
+                <ul class="info">
+                <li class="menu-info"><a href="#">로그인</a></li>
+                <li class="menu-info"><a href="#">회원가입</a></li>
+                    <li class="menu-info"><a href="#">마이페이지</a></li>
+                    <li class="menu-info"><a href="#">주문조회</a></li>
+                    <li class="menu-info"><a href="#">장바구니</a></li>
+                </ul>
+            </div>
+            </header>
+        </div>
+        <main>
+            <div class="box"></div>
+        </main>
+        <div class="pop-up-wrap">
+            <div class="pop-up">
+                <button type="button" class="pop-up-close"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+                <a href="#">
+                    <img src="홈페이지이미지/할인이벤트.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <address>
+            <strong>COMPANY. boutique</strong>
+            <p>OWNER. Yoon A Moon</p>
+            <a href="#" class="check">사업자 정보 확인</a><br>
+            <p>ADDRESS. 25, Jangsin-ro, Gwangsan-gu, Gwang-ju, Republic of Korea</p>
+            <p>Coplyright &copy;부티크 All rights reserved.</p>
+        </address>
+
+        <div class="alert alert-light" role="alert">
+            <p class="company">사업자 정보</p>
+            <p class="company-number">사업자 등록번호: 000-123-4567</p>
+            <p class="company-tel"><a href="tel:010-4567-8971">전화번호: 010-4567-8971</a></p>
+            <p class="company-email"><a href="admin@boutique.com">이메일: admin@boutique.com</a></p>
+            <button type="button" class="close-btn"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+    <script>
+        $('.check').on('click', function () {
+            $('.alert').css('display', 'block')
+            $('.alert').css('background-color', 'white')
+        })
+
+        $('.close-btn').on('click', function () {
+            $('.alert').css('display', 'none')
+        })
+        $('.pop-up-close').on('click', function () {
+            $('.pop-up').css('display', 'none')
+        })
+    </script>
+</body>
+
+</html>
