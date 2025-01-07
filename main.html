@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="image/파비콘.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Cherish&family=Do+Hyeon&family=Gowun+Batang:wght@400;700&family=Jua&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <title>boutique</title>
+    <style>
+        .sr-only {position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;}
+    </style>
+</head>
+
+<body>
+    <p id="size" class="sr-only">의류 쇼핑몰의 사이트입니다.</p>
+    <div class="main-container">
+        <div class="intro">
+            <header class="header">
+                <ul>
+                    <li><a href="index.html"><img src="image/홈페이지로고.svg" alt="브랜드 로고" class="class-a"></a></li>
+                </ul>
+                <ul class="header-menu">
+                    <li class="menu"><a href="Best10.html">Best 10</a></li>
+                    <li class="menu"><a href="#">신상</a></li>
+                    <li class="menu"><a href="#">Outer</a></li>
+                    <li class="menu"><a href="#">Top</a></li>
+                    <li class="menu"><a href="#">Dress</a></li>
+                    <li class="menu"><a href="#">Bottom</a></li>
+                    <li class="menu"><a href="#">Acc</a></li>
+                    <li class="menu"><a href="#">Shoes</a></li>
+                    <li class="menu"><a href="#">Sale</a></li>
+                    <li class="menu"><a href="main.html">코디만들기</a></li>
+                    <li class="menu-info"><a href="#">로그인</a></li>
+                    <li class="menu-info"><a href="#">회원가입</a></li>
+                    <li class="menu-info"><a href="#">마이페이지</a></li>
+                    <li class="menu-info"><a href="#">주문조회</a></li>
+                    <li class="menu-info"><a href="#">장바구니</a></li>
+                </ul>
+            </header>
+        </div>
+
+        <aside>
+            <input type="search" class="search" placeholder="상품 검색">
+            <button type="button" class="icon-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <ul class="aside-items">
+                <li class="item"><a href="#"><img src="홈페이지이미지/코트.jpg" alt="코트" id="coat">코트</a></li>
+                <li class="item"><a href="#"><img src="홈페이지이미지/자켓.jpg" alt="자켓" id="jacket">자켓</a></li>
+                <li class="item"><a href="#"><img src="홈페이지이미지/점퍼.jpg" alt="점퍼" id="jumper">점퍼</a></li>
+                <li class="item"><a href="#"><img src="홈페이지이미지/니트.jpg" alt="니트 및 가디건" id="knit">니트 & 가디건</a></li>
+                <li class="item"><a href="#"><img src="홈페이지이미지/티셔츠.jpg" alt="티셔츠" id="tshirt">티셔츠</a></li>
+                <li class="item"><a href="#"><img src="홈페이지이미지/원피스.jpg" alt="원피스" id="dress">원피스</a></li>
+                <li class="item"><a href="#"><img src="홈페이지이미지/스커트.jpg" alt="스커트" id="skirt">스커트</a></li>
+                <li class="item"><a href="#"><img src="홈페이지이미지/팬츠.jpg" alt="팬츠" id="pants">팬츠</a></li>
+                <li class="item"><a href="#"><img src="홈페이지이미지/액세사리.jpg" alt="악세사리" id="acc">악세사리</a></li>
+                <li class="item"><a href="#"><img src="홈페이지이미지/슈즈.jpg" alt="슈즈" id="shoes">슈즈</a></li>
+            </ul>
+        </aside>
+
+
+        <div class="box">
+            <div class="box-item">
+            <img src="홈페이지이미지/코트.svg" alt="코트" class="coat">
+        </div>
+            <button type="button" class="btn btn-light">장바구니에 넣기</button>
+            <button type="button" class="btn btn-light" id="layer">이미지 순서</button>
+            <button type="button" class="btn btn-light">코디 삭제하기</button>
+            <button type="button" class="btn btn-light">저장하기</button>
+            <button type="button" class="btn btn-light">저장된 코디보기</button>
+            <button type="button" class="btn btn-outline-secondary" id="layer-front">앞으로 가져오기</button>
+            <button type="button" class="btn btn-outline-secondary" id="layer-back">뒤로 보내기</button>
+        </div>
+    </div>
+
+    <footer>
+        <address>
+            <strong>COMPANY. boutique</strong>
+            <p class="address">OWNER. Yoon A Moon</p>
+            <p class="address"><a href="#" class="check">사업자 정보 확인</a></p>
+            <p class="address">ADDRESS. 25, Jangsin-ro, Gwangsan-gu, Gwang-ju, Republic of Korea</p>
+            <p class="address">Coplyright &copy;부티크 All rights reserved.</p>
+        </address>
+
+        <div class="alert alert-light" role="alert">
+            <p class="company">사업자 정보</p>
+            <p class="company-number">사업자 등록번호: 000-123-4567</p>
+            <p class="company-tel"><a href="tel:010-4567-8971">전화번호: 010-4567-8971</a></p>
+            <p class="company-email"><a href="admin@boutique.com">이메일: admin@boutique.com</a></p>
+            <button type="button" class="close-btn"><i class="fa-solid fa-xmark fa-xl"></i></button>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+
+    <script>
+        $('.check').on('click', function () {
+            $('.alert').css('display', 'block');
+            $('.alert').css('background-color', 'rgba(0, 0, 0, 0.1)');
+        })
+
+        $('.close-btn').on('click', function () {
+            $('.alert').css('display', 'none')
+        })
+
+        $('#coat').on('click', function () {
+            $('.coat').css('display', 'block')
+            $('.btn').css('top', '370px')
+        })
+
+
+        let count = 1;
+        $('#layer').on('click', function () {
+            count++;
+            console.log(count);
+            if (count % 2 === 0) {
+                $('#layer-front').css('display', 'block');
+                $('#layer-back').css('display', 'block');
+            } else {
+                $('#layer-front').css('display', 'none');
+                $('#layer-back').css('display', 'none');
+            }
+        })
+
+    </script>
+</body>
+
+</html>
